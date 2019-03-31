@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build-dev": "webpack --config webpack.development.js",
     "build": "webpack --config webpack.$NODE_ENV.js",
     "start": "node dist/main",
     "start:env": "node --require dotenv/config dist/main"
@@ -12,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/graphql": "^14.2.0",
     "@types/webpack-env": "^1.13.9",
     "clean-webpack-plugin": "^2.0.1",
     "dotenv": "^7.0.0",
